@@ -1,0 +1,33 @@
+
+Showing logs for build [32mexplore-jenkinsx-environment-jx-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-gljkh[0m
+{"level":"warn","ts":1573436051.7861378,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573436051.7880282,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mexplore-jenkinsx-environment-jx-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-6fwdc[0m
+{"level":"warn","ts":1573436052.7209287,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573436052.7224743,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mexplore-jenkinsx-environment-jx-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mexplore-jenkinsx-environment-jx-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-explore-jenkinsx-environment-jx-rjgk5[0m
+{"level":"warn","ts":1573436057.8400123,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573436058.0971873,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/explore-jenkinsx/environment-jx-***-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mexplore-jenkinsx-environment-jx-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:120905282365d6afc63eb247249dd92d18876cdc,1:581ea5e9efecf84bd6fd7b7fe9db9ed8b4f6aeff
+DEBUG: ran git fetch --unshallow origin 581ea5e9efecf84bd6fd7b7fe9db9ed8b4f6aeff: 120905282365d6afc63eb247249dd92d18876cdc: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 120905282365d6afc63eb247249dd92d18876cdc in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 581ea5e9efecf84bd6fd7b7fe9db9ed8b4f6aeff in 
+Merged SHA 581ea5e9efecf84bd6fd7b7fe9db9ed8b4f6aeff with commit message 'chore: Promote go-qs1 to version 0.0.1' into base branch master
+
+Showing logs for build [32mexplore-jenkinsx-environment-jx-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
